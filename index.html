@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Form</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="formContainer">
+            <h2>ثبت نام</h2>
+            <p>مرحله اول</p>
+            <form action="second.html">
+                <label>
+                    نام
+                    <input type="text" name="fName" required>
+                </label>
+                <label>
+                    نام خانوادگی
+                    <input type="text" name="lName" required>
+                </label>
+                <label>
+                    شماره شناسنامه
+                    <input type="text" name="pId" required>
+                </label>
+                <label>
+                    نام پدر
+                    <input type="text" name="fatherName" required>
+                </label>
+                <label>
+                    کد ملی
+                    <input type="text" name="mId" required maxlength="10">
+                </label>
+                <label>
+                    محل صدور شناسنامه
+                    <input type="text" name="bornAt" required minlength="3">
+                </label>
+                <label>
+                    تاریخ تولد
+                    <input type="text" name="bornDate" placeholder="dd/mm/yy" required>
+                </label>
+                <input type="submit" value="مرحله بعدی">
+            </form>
+        </div>
+        <div class="formImg">
+            <h2>First Form</h2>
+        </div>
+    </div>
+</body>
+</html>

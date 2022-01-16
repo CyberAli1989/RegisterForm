@@ -1,0 +1,139 @@
+@import url("https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazir', sans-serif;
+    background: rgba(0, 0, 0, 0.15);
+    direction: rtl;
+}
+
+.form {
+    width: 60%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px auto;
+}
+
+.form .formImg {
+    width: 100%;
+    height: 500px;
+    background: url(https://th.bing.com/th/id/R.6264d427297c393cff02f0d130730055?rik=nN165HLLz5uiNA&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2fsmall-memory-8k-2a.jpg&ehk=bOyAtsKURz63tRIxP6LRsME%2bUIdg50Ii7cIa9QqlWA4%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    border-radius:15px 0 0 15px;
+}
+
+.form .formContainer {
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    border-radius:0 15px 15px 0;
+}
+
+.form .formContainer h2,
+p {
+    text-align: center;
+}
+
+.form .formImg h2 {
+    margin-top: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px dashed black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 50px 15px;
+}
+
+form label {
+    display: block;
+    text-align: center;
+}
+
+form input {
+    display: block;
+    margin: 15px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+}
+
+input[type=submit] {
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #20002c;
+    background: linear-gradient(to right, #cbb4d4, #20002c);
+    color: #fff;
+    transition: 580ms;
+    font-weight: 700;
+    font-size: 1.2em;
+
+    &:hover {
+        background: #20002c;
+
+    }
+}
+
+::placeholder {
+    text-align: center;
+}
+
+
+form h2 {
+    width: 100%;
+    font-size: 1em;
+    display: block;
+}
+.sFrom{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    & *{
+        text-align: right;
+    }
+    & label{
+        font-size: 0.8em;
+    }
+    & input[type=submit]{
+        text-align: center;
+    }
+}
+.sMainForm{
+    width: 70%;
+    & .formImg {
+        border-radius: 0;
+        border-radius: 0 15px 15px 0;
+    }
+    & .formContainer{
+        border-radius: 0;
+        border-radius: 15px 0 0 15px;
+    }
+}
+input[type=radio]{
+    display: inline;
+}
+.radio{
+    display: inline;
+}
+textarea{
+    width: 100% ;
+    height: 4em;
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
